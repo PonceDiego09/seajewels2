@@ -32,6 +32,25 @@
     <a href="#" onclick="cerrarSesion()">Login</a>
   </nav>
 
+    <script>
+    // Verificar si el usuario ha iniciado sesión
+    if (localStorage.getItem("sesion") === "iniciada") {
+        document.getElementById("login").style.display = "none"; // Ocultar Login
+        document.getElementById("logout").style.display = "block"; // Mostrar Cerrar sesión
+    }
+    // Función para simular inicio de sesión
+    function iniciarSesion() {
+        localStorage.setItem("sesion", "iniciada");
+        location.reload(); // Recargar la página para aplicar cambios
+    }
+    // Función para cerrar sesión
+    function cerrarSesion() {
+        localStorage.removeItem("sesion");
+        location.reload();
+    }
+</script>
+
+
   <!-- Carrusel de imágenes -->
   <div class="swiper mySwiper">
       <div class="swiper-wrapper">
