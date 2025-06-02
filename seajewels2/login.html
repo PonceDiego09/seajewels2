@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Jewels</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="forms">
+            <!-- login -->
+            <div class="form-container login-form">
+                <h2>Iniciar Sesión</h2>
+                <form id="loginForm">
+                    <label for="loginEmail">Correo Electrónico</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                    <label for="loginPassword">Contraseña</label>
+                    <input type="password" id="loginPassword" name="password" required>
+                    <button type="submit">Iniciar Sesión</button>
+                </form>
+                <p>No tienes cuenta? <a href="#" onclick="showRegisterForm()">Regístrate aquí</a></p>
+            </div>
+            <!-- formulario de registro-->
+            <div class="form-container register-form" style="display: none;">
+                <h2>Registro</h2>
+                <form id="registerForm">
+                    <label for="registerName">Nombre</label>
+                    <input type="text" id="registerName" name="name" required>
+                    <label for="registerEmail">Correo Electrónico</label>
+                    <input type="email" id="registerEmail" name="email" required>
+                    <label for="registerPassword">Contraseña</label>
+                    <input type="password" id="registerPassword" name="password" required>
+                    <button type="submit">Registrarse</button>
+                </form>
+                <p>Ya tienes cuenta? <a href="#" onclick="showLoginForm()">Inicia sesión aquí</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

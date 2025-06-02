@@ -1,0 +1,142 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #e0f7fa;
+      color: #004d40;
+    }
+    header {
+      background: linear-gradient(to right, #006064, #00838f);
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #004d40;
+    }
+    nav a {
+      color: #e0f7fa;
+      text-decoration: none;
+      padding: 15px 20px;
+      display: inline-block;
+    }
+    nav a:hover {
+      background-color: #00796b;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+    .producto {
+      border: 1px solid #b2ebf2;
+      border-radius: 10px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .producto img {
+      width: 100%;
+      height: auto;
+    }
+    .producto-info {
+      padding: 15px;
+      flex-grow: 1;
+    }
+    .producto-info h3 {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+    .producto-info p {
+      color: #006064;
+    }
+    .producto-info button {
+      margin-top: 15px;
+      background-color: #00838f;
+      border: none;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .producto-info button:hover {
+      background-color: #006064;
+    }
+    .login, .pago, .carrito {
+      max-width: 400px;
+      margin: auto;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border: 1px solid #b2ebf2;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #b2ebf2;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #006064;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #004d40;
+    }
+    footer {
+      background: #004d40;
+      color: #e0f7fa;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    #carrito-lista {
+      list-style: none;
+      padding-left: 0;
+    }
+    #carrito-lista li {
+      padding: 5px 0;
+      border-bottom: 1px solid #b2ebf2;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .quitar-btn {
+      background-color: #e57373;
+      border: none;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.8rem;
+    }
+    .quitar-btn:hover {
+      background-color: #c62828;
+    }
+    
+
+  

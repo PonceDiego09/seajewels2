@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyería SeaJewles</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <style>
+    .swiper {
+        width: 80%;
+        height: 300px;
+        margin: 20px auto;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SeaJewles</h1>
+    <p>Inspirada en la belleza del océano</p>
+  </header>
+  <nav>
+    <a href="#productos">Productos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="#pago">Pago</a>
+    <a href="#carrito">Carrito</a>
+    <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>
+  </nav>
+
+  <!-- Carrusel de imágenes -->
+  <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/carusel1.jpg" alt="Tabillera"></div>
+          <div class="swiper-slide"><img src="img/carusel2.jpg" alt="Pulsera con estrella de mar"></div>
+          <div class="swiper-slide"><img src="img/carusel4.jpg" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/carusel3.jpg" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/anillo-mar-.png" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/baner4.jpg" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/gaeleria 4 A.jpeg" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/galeria 1 A.jpeg" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/galeria 2.jpeg" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/galeria 3.jpeg" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/banner77.jpeg" alt="Anillo con diseño de ola"></div>
+          <div class="swiper-slide"><img src="img/banner78.jpeg " alt="Anillo con diseño de ola"></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+  </div>
+
+  <section id="productos">
+    <h2>Nuestros Productos</h2>
+    <br>
+    <div class="productos">
+      <div class="producto">
+        <img src="img/perla.jpg" alt="Collar perla">
+        <div class="producto-info">
+          <h3>Collar con Perla</h3>
+          <p>$25.00</p>
+          <button onclick="agregarAlCarrito('Collar con Perla')">Agregar al carrito</button>
+         </div>
+        </div>
+
+       <div class="producto">
+        <img src="img/pulsera.jpg" alt="Pulseras">
+        <div class="producto-info">
+          <h3>Pulseras variedad</h3>
+          <p>$5.50</p>
+          <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+        </div>
+       </div>
+
+        <div class="producto">
+         <img src="img/producto anillo4.jpeg" alt="Pulseras">
+         <div class="producto-info">
+          <h3>anillo concha</h3>
+          <p>$6.75</p>
+          <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+           <img src="img/producto anillo6.jpeg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>anillo ballena</h3>
+            <p>$6.75</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+         </div>
+        </div>
+
+         <div class="producto">
+           <img src="img/producto anillo6.jpeg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>anillo ballena</h3>
+            <p>$6.75</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+         </div>
+         </div>
+
+         <div class="producto">
+           <img src="img/producto 9.jpeg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>collar tortuga</h3>
+            <p>$9.50</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+         </div>
+         </div>
+        
+         <div class="producto">
+           <img src="img/producto 7 C.jpeg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>collar ballena</h3>
+            <p>$12.25</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+        </div>
+         </div>
+
+        <div class="producto">
+           <img src="img/producto 6 C.jpeg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>collar cola de sirena</h3>
+            <p>$10.50</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+        </div>
+        </div>
+
+        <div class="producto">
+           <img src="img/producto 3 C.jpeg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>collar concha</h3>
+            <p>$10.00</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+          </div>
+        </div>
+
+       <div class="producto">
+           <img src="img/producto2.jpg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>pulsera estrella y concha</h3>
+            <p>$9.95</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto">
+           <img src="img/producto4.jpeg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>pulsera variedad</h3>
+            <p>$13.65</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+          </div>
+        </div>
+
+        <div class="producto">
+           <img src="img/producto7.jpeg" alt="Pulseras">
+           <div class="producto-info">
+            <h3>pulsera perlas</h3>
+            <p>$11.75</p>
+           <button onclick="agregarAlCarrito('Pulseras')">Agregar al carrito</button>
+          </div>
+        </div>
+
+    </div>
+  </section>
+
+  <section id="pago" class="pago">
+    <h2>Pago Seguro</h2>
+    <form>
+      <select required>
+        <option value="">Seleccione método de pago</option>
+        <option value="tarjeta">Tarjeta de Crédito</option>
+        <option value="paypal">PayPal</option>
+      </select>
+      <input type="text" placeholder="Nombre en la tarjeta">
+      <input type="text" placeholder="Número de tarjeta">
+      <input type="text" placeholder="Fecha de expiración (MM/AA)">
+      <input type="text" placeholder="Código de seguridad">
+      <button type="submit">Pagar</button>
+    </form>
+  </section>
+
+  <section id="carrito" class="carrito">
+    <h2>Carrito de Compras</h2>
+    <ul id="carrito-lista"></ul>
+    <button class="pagar-btn" onclick="redirigirAPago()">Ir a Pago</button>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    const carrito = {};
+
+    function agregarAlCarrito(producto) {
+      if (carrito[producto]) {
+        carrito[producto]++;
+      } else {
+        carrito[producto] = 1;
+      }
+      mostrarCarrito();
+    }
+
+    function quitarDelCarrito(producto) {
+      if (carrito[producto]) {
+        carrito[producto]--;
+        if (carrito[producto] <= 0) {
+          delete carrito[producto];
+        }
+      }
+      mostrarCarrito();
+    }
+
+    function mostrarCarrito() {
+      const lista = document.getElementById('carrito-lista');
+      lista.innerHTML = '';
+      for (let producto in carrito) {
+        const li = document.createElement('li');
+        li.innerHTML = `${producto} x ${carrito[producto]} <button class="quitar-btn" onclick="quitarDelCarrito('${producto}')">Quitar</button>`;
+        lista.appendChild(li);
+      }
+    }
+
+    function redirigirAPago() {
+      window.location.href = 'https://www.paypal.com/checkoutnow';
+    }
+
+    function cerrarSesion() {
+      window.location.href = "login.html";
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2025 SeaJewles. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
