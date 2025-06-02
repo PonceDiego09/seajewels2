@@ -1,0 +1,64 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joyería SeaJewles</title>
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  <style>
+    .swiper {
+        width: 80%;
+        height: 300px;
+        margin: 20px auto;
+    }
+    .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SeaJewles</h1>
+    <p>Inspirada en la belleza del océano</p>
+  </header>
+  <nav>
+    <a href="index.html">Productos</a>
+    <a href="perfil.html">Perfil</a>
+    <a href="pago.html">Pago</a>
+    <a href="carrito">Carrito</a>
+    <a href="#" onclick="cerrarSesion()">Cerrar sesión</a>
+  </nav>
+
+  <section id="pago" class="pago">
+    <h2>Pago con tarjeta de crédito</h2>
+<form id="tarjetaForm">
+    <label for="text">Titular de tarjeta</label>
+    <input type="text" id="titular" required>
+    <label for="numero">Número de tarjeta:</label>
+    <input type="text" id="numero" required>
+    <label for="cvv">CVV:</label>
+    <input type="text" id="cvv" required>
+    <button type="submit">Pagar</button>
+</form>
+<div id="mensajeTarjeta" style="display: none; color: green;">¡Pago Exitoso!</div>
+
+<h2>Pago con PayPal</h2>
+<form id="paypalForm" action="https://www.paypal.com/donate" method="get">
+    <button type="submit">Pagar con PayPal</button>
+</form>
+
+<script>
+    document.getElementById("tarjetaForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Evita el envío real del formulario
+        document.getElementById("mensajeTarjeta").style.display = "block"; // Muestra el mensaje de éxito
+    });
+</script>
+  </section>
+    <footer>
+    <p>&copy; 2025 SeaJewles. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
